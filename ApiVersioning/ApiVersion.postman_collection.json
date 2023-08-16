@@ -1,0 +1,226 @@
+{
+	"info": {
+		"_postman_id": "be8a8389-202a-417f-afdc-e7f58b2499ba",
+		"name": "ApiVersion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8525084"
+	},
+	"item": [
+		{
+			"name": "MetodoGetConVersione",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "api-version",
+						"value": "2.0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7175/api/ApiVersion/MetodoGetConVersione",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7175",
+					"path": [
+						"api",
+						"ApiVersion",
+						"MetodoGetConVersione"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MetodoGetConVersioneDiDefault",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7175/api/ApiVersion/MetodoGetConVersione",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7175",
+					"path": [
+						"api",
+						"ApiVersion",
+						"MetodoGetConVersione"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MetodoSenzaVersione",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "api-version",
+						"value": "1.0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7175/api/ApiVersion/MetodoSenzaVersione",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7175",
+					"path": [
+						"api",
+						"ApiVersion",
+						"MetodoSenzaVersione"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VersionAllMethodsController",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Nome\" : \"Mario\"\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:7175/api/VersionAllMethodsController/Post",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7175",
+					"path": [
+						"api",
+						"VersionAllMethodsController",
+						"Post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VersionAllMethodsControllerV2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Nome\" : \"Mario\",\r\n    \"Cognome\": \"Rossi\"\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:7175/api/v2.1-alfa/VersionAllMethodsController/Post",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7175",
+					"path": [
+						"api",
+						"v2.1-alfa",
+						"VersionAllMethodsController",
+						"Post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostUgualeFraVersioni",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Indirizzo\" : \"Via Roma\"\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:7175/api/V2.1-alfa/VersionAllMethodsController/PostUgualeFraVersioni",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7175",
+					"path": [
+						"api",
+						"V2.1-alfa",
+						"VersionAllMethodsController",
+						"PostUgualeFraVersioni"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ApiWithoutVersionController",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "api-version",
+						"value": "2.0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Indirizzo\" : \"Via Roma\"\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:7175/api/ApiWithoutVersion/Get",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7175",
+					"path": [
+						"api",
+						"ApiWithoutVersion",
+						"Get"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
